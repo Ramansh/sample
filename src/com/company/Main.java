@@ -1,14 +1,11 @@
 package com.company;
 
 import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
-import org.omg.CORBA.INTERNAL;
 
 import java.io.*;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
@@ -20,23 +17,23 @@ public class Main {
 
         //addition by 1 to allData
         Address curr = new Address("162","Unka Jahan","London","UK");
-        Info data = new Info(1,"Jason","MD",9999,curr);
+        Info data = new Info(1,"Jason","MD",9999999,curr);
         allData.add(data);
 
         curr = new Address("144","Unka Jahan","London","UK");
-        data = new Info(2,"Salman Kagzi","Engineering",9999,curr);
+        data = new Info(2,"Salman Kagzi","Engineering",9999999,curr);
         allData.add(data);
 
         curr = new Address("8","Apna Jahan","Gurugram","");
-        data = new Info(3,"Chunky Garg","Engineering",9999,curr);
+        data = new Info(3,"Chunky Garg","Engineering",9999999,curr);
         allData.add(data);
 
         curr = new Address("70","Apna Jahan","Banglore","Karnataka");
-        data = new Info(4,"Uma Swarna","Human Resource",9999,curr);
+        data = new Info(4,"Uma Swarna","Human Resource",9999999,curr);
         allData.add(data);
 
         curr = new Address("01","Unka Jahan","London","UK");
-        data = new Info(5,"David Gorton","Operations",9999,curr);
+        data = new Info(5,"David Gorton","Operations",9999999,curr);
         allData.add(data);
 
 
@@ -52,8 +49,17 @@ public class Main {
         //System.out.println(jsonData);
 
         Gson gsonObject = new Gson();
-        List<Info> temp = gsonObject.fromJson((String) jsonData, List.class);
+        List<Map> temp = gsonObject.fromJson((String) jsonData, List.class);
         System.out.println(temp+"\nread from json");
+
+        for(Map str:temp) {
+            System.out.println("id: "+str.get("id"));
+            System.out.println("name: "+str.get("name"));
+            System.out.println("department: "+str.get("department"));
+            System.out.println("salary: "+str.get("salary"));
+            System.out.println("address: "+str.get("current"));
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        }
     }
 
 
