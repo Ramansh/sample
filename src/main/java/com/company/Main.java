@@ -64,7 +64,8 @@ public class Main {
 
 
     public static void writeJsonToFile(String json) {
-        File file = new File("jsonFile");
+        File file = new File("/Users/shuklara/Desktop/jsonFile.");
+
 
         try {
             FileOutputStream f = new FileOutputStream(file);
