@@ -231,14 +231,6 @@
 			<version>2.0.0</version>
 		</dependency>
 
-		<!--Password Encryption-->
-		<dependency>
-			<groupId>com.blueoptima</groupId>
-			<artifactId>encryption-service</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/passEncryption.jar</systemPath>
-		</dependency>
 		<!--Google Apis for Json conversion to object/object to Json-->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
