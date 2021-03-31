@@ -12,8 +12,8 @@
 		<jdk.version>1.8</jdk.version>
 		<junit.version>4.11</junit.version>
 		<spring.version>4.2.0.RELEASE</spring.version>
-		<hibernate.version>4.3.9.Final</hibernate.version>
-		<hibernate.validator.version>5.1.3.Final</hibernate.validator.version>
+		<hibernate.version>5.2.0.Final</hibernate.version>
+		<hibernate.validator.version>6.0.19.Final</hibernate.validator.version>
 		<spring.security.version>3.2.7.RELEASE</spring.security.version>
 		<java.jwt.version>2.0.1</java.jwt.version>
 		<saml.version>1.0.1.RELEASE</saml.version>
@@ -259,7 +259,7 @@
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>
 			<artifactId>quartz</artifactId>
-			<version>2.2.1</version>
+			<version>2.3.2</version>
 		</dependency>
 
 		<!-- dependency for storing keys on google cloud storage -->
