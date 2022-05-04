@@ -266,7 +266,7 @@
 		<dependency>
 			<groupId>com.google.cloud</groupId>
 			<artifactId>google-cloud-storage</artifactId>
-			<version>1.0.0</version>
+			<version>1.13.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
 		<dependency>
